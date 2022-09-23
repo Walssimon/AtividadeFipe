@@ -1,1 +1,13 @@
-	
+CREATE DATABASE IF NOT EXISTS Fipe ; 
+
+USE Fipe ;
+
+CREATE TABLE Carros (
+	CodCarro INT NOT NULL,
+	Fabricante VARCHAR (50) NOT NULL,
+	Modelo VARCHAR (50) NOT NULL,
+	Ano DATE NOT NULL,
+	Preco DECIMAL (8,2) NOT NULL,
+
+	CONSTRAINT PK_Carros PRIMARY KEY (CodCarro)
+);
